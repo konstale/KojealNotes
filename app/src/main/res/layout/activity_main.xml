@@ -22,10 +22,8 @@
 
     <include layout="@layout/content_main" />
 
-    <Button
-        android:id="@+id/button2"
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_height="356dp" />
 
 </android.support.design.widget.CoordinatorLayout>
