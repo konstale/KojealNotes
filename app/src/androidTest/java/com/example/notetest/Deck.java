@@ -1,27 +1,27 @@
 package com.example.notetest;
 
-public class Card {
+public class Deck {
 
     private String name;
     private String type;
 
 
-    public Card(String name, String type){
+    public Deck(String name, String type){
 
         this.name = name;
         this.type = type;
     }
 
-    public getCardName(){
+    public getDeckName(){
         return name;
 
     }
 
-    public getCardType(){
+    public getDeckType(){
         return type;
     }
 
-    public getCardInfo(){
+    public getDeckInfo(){
         return name, type,
     }
 
