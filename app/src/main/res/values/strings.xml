@@ -3,4 +3,6 @@
     <string name="action_settings">Settings</string>
     <string name="front_deck">Front</string>
     <string name="back_Deck">Back</string>
+    <string name="front_text_enter">Enter Front Text</string>
+    <string name="back_text_enter">Enter Back Text</string>
 </resources>
