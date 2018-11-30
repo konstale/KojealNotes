@@ -23,10 +23,9 @@ public class MainActivity extends AppCompatActivity {
 
         lv.setAdapter(new ArrayAdapter<Decks>(
                 this,
-                android.R.layout.simple_list_item_1
-                //ADD LINE 26 CORRESPONDING TO DECKLIST
-                // Presidents.getInstance().getPresidents())
-        ));
+                android.R.layout.simple_list_item_1,
+                Decks.getInstance().getDecks())
+        );
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
