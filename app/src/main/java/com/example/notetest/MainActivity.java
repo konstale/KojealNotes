@@ -16,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //changes title from "noteTest" to "Create Cards"
-        getSupportActionBar().setTitle("Create Cards");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
