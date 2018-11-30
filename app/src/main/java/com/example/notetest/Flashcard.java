@@ -2,8 +2,8 @@ package com.example.notetest;
 
 public class Flashcard{
 
-    private String textOne;
-    private String textTwo;
+    private String front;
+    private String back;
 
     public Flashcard(String textOne, String textTwo){
         this.textOne = textOne;

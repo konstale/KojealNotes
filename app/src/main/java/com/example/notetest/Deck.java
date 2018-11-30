@@ -1,5 +1,7 @@
 package com.example.notetest;
 
+import java.util.ArrayList;
+
 public class Deck {
 
     private String name;
@@ -21,9 +23,7 @@ public class Deck {
         return type;
     }
 
-    public getDeckInfo(){
-        return name, type,
+    private DeckList(){
+        Decks = new D
     }
-
-
 }
