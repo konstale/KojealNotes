@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Log.d(TAG, "onItemClick(" + i + ")");
-                Intent nextActivity = new Intent(MainActivity.this, PresidentDetailsActivity.class);
+                Intent nextActivity = new Intent(MainActivity.this, PLACEHOLDERSTUFF.class);
                 nextActivity.putExtra("EXTRA", i);
                 startActivity(nextActivity);
 
