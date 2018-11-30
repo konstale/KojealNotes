@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //changes title from "noteTest" to "Create Cards"
+        getSupportActionBar().setTitle("Create Cards");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -22,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
         lv.setAdapter(new ArrayAdapter<Decks>(
                 this,
-                android.R.layout.simple_list_item_1,
+                android.R.layout.simple_list_item_1
                 //ADD LINE 26 CORRESPONDING TO DECKLIST
                 // Presidents.getInstance().getPresidents())
-        );
+        ));
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
