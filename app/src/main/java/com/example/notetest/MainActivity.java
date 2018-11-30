@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         ListView lv = findViewById(R.id.deckView);
 
         lv.setAdapter(new ArrayAdapter<Decks>(
