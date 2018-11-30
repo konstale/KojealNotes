@@ -5,17 +5,17 @@ public class Flashcard{
     private String front;
     private String back;
 
-    public Flashcard(String textOne, String textTwo){
-        this.textOne = textOne;
-        this.textTwo = textTwo;
+    public Flashcard(String front, String back){
+        this.front = front;
+        this.back = back;
     }
 
-    public String getTextOne(){
-        return textOne;
+    public String getFront(){
+        return front;
     }
 
-    public String getTextTwo(){
-        return textTwo;
+    public String getBack(){
+        return back;
     }
 
 
