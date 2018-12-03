@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         ListView lv = findViewById(R.id.deckView);
 
-        lv.setAdapter(new ArrayAdapter<Deck>(this, android.R.layout.simple_list_item_1, Decks.getInstance().getDecks()));
+        //lv.setAdapter(new ArrayAdapter<Deck>(this, android.R.layout.simple_list_item_1, Decks.getInstance().getDecks()));
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
