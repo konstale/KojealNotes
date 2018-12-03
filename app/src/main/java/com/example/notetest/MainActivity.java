@@ -35,19 +35,14 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        //makes the plus button open crate deck activity
-        public void addClick (View view) {
-            Intent createActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
-            startActivity(createActivity);
-        }
 
-    //makes the plus button open create deck activity
-    public void addClick (View view) {
-        Intent createActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
-        startActivity(createActivity);
+
 
     }
-
+    //makes the plus button open create deck activity
+    public void addClick(View view) {
+        Intent createActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
+        startActivity(createActivity);
     }
 
 }
