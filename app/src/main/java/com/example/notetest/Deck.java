@@ -22,5 +22,9 @@ public class Deck {
     public String getDeckType(){
         return type;
     }
+    @Override
+    public String toString(){
+        return this.name;
+    }
 
 }
