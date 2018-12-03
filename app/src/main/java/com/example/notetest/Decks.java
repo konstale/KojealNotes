@@ -11,7 +11,7 @@ public class Decks {
         return ourInstance;
     }
 
-    private Decks() {
+    public Decks() {
         decks = new ArrayList<Decks>();
         //decks.add(new Decks());
     }
