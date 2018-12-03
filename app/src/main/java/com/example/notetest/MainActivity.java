@@ -23,23 +23,23 @@ public class MainActivity extends AppCompatActivity {
 
         ListView lv = findViewById(R.id.deckView);
 
-        lv.setAdapter(new ArrayAdapter<Decks>(
-                this,
-                android.R.layout.simple_list_item_1,
-                Decks.getInstance().getDecks())
-        );
+        lv.setAdapter(new ArrayAdapter<Deck>(this, android.R.layout.simple_list_item_1, Decks.getInstance().getDecks()));
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Log.d(TAG, "onItemClick(" + i + ")");
-                Intent nextActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
+                Intent nextActivity = new Intent(MainActivity.this, ViewDeckActivity.class);
                 nextActivity.putExtra("EXTRA", i);
                 startActivity(nextActivity);
 
             }
         });
-    }
+        //makes the plus button open crate deck activity
+        public void addClick (View view) {
+            Intent createActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
+            startActivity(createActivity);
+        }
 
     //makes the plus button open create deck activity
     public void addClick (View view) {
@@ -48,5 +48,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    }
 
 }
