@@ -14,12 +14,12 @@ public class Deck {
         this.type = type;
     }
 
-    public getDeckName(){
+    public String getDeckName(){
         return name;
 
     }
 
-    public getDeckType(){
+    public String getDeckType(){
         return type;
     }
 
