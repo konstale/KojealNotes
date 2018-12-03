@@ -13,7 +13,7 @@ public class Decks {
 
     private Decks() {
         decks = new ArrayList<Decks>();
-        decks.add(new Decks());
+        //decks.add(new Decks());
     }
 
     public ArrayList<Decks> getDecks() {

@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
         ListView lv = findViewById(R.id.deckView);
 
         lv.setAdapter(new ArrayAdapter<Decks>(
@@ -40,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //makes the plus button open create deck activity
+    public void addClick (View view) {
+        Intent createActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
+        startActivity(createActivity);
+
+    }
 
 
 }
