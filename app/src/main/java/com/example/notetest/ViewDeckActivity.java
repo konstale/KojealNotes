@@ -10,6 +10,7 @@ public class ViewDeckActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_deck);
 
-
+        //changes title from "noteTest" to "Kojeal Notes"
+        getSupportActionBar().setTitle("Kojeal Notes");
     }
 }
