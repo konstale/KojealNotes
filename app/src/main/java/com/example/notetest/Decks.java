@@ -3,23 +3,22 @@ package com.example.notetest;
 import java.util.ArrayList;
 
 public class Decks {
-    private static final Decks ourInstance = new Decks();
+    private static final Decks Instance = new Decks();
 
-    private ArrayList<Decks> decks;
+    private ArrayList<Deck> decks;
 
     public static Decks getInstance() {
-        return ourInstance;
+        return Instance;
     }
 
-    private Decks() {
-        decks = new ArrayList<Decks>();
-        decks.add(new Decks());
+    public Decks() {
+        decks = new ArrayList<Deck>();
     }
 
-    public ArrayList<Decks> getDecks() {
+    public ArrayList<Deck> getDecks() {
         return decks;
     }
-    public Decks getDecks(int i) {
+    public Deck getDecks(int i) {
         return decks.get(i);
     }
 }
