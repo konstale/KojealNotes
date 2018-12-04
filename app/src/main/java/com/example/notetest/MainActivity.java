@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         ListView lv = findViewById(R.id.deckView);
 
-        lv.setAdapter(new ArrayAdapter<Deck>(this, android.R.layout.simple_list_item_1, Decks.getInstance().getDecks()));
+        //lv.setAdapter(new ArrayAdapter<Deck>(this, android.R.layout.simple_list_item_1, Decks.getInstance().getDecks()));
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -49,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
         final View setView = view.inflate(this, R.layout.popup, null);
         builder.setView(setView);
         builder.show();
+
+    }
+    //clicking save on dialog brings it to CreateDeckActivity
+        public void addClick2(View view) {
+            Intent createActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
+            startActivity(createActivity);
+
+
+
 
     }
 
