@@ -14,7 +14,7 @@
         android:layout_marginTop="90dp"
         android:ems="10"
         android:hint="@string/front_text_enter"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,7 +27,7 @@
         android:layout_marginTop="90dp"
         android:ems="10"
         android:hint="@string/back_text_enter"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
