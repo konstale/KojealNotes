@@ -2,6 +2,7 @@ package com.example.notetest;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class ViewDeckActivity extends AppCompatActivity {
 
@@ -10,7 +11,7 @@ public class ViewDeckActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_deck);
 
-        //changes title from "noteTest" to "Kojeal Notes"
-        getSupportActionBar().setTitle("Kojeal Notes");
+       // TextView frontText = (TextView) findViewById(R.id.editText);
+        // TextView backText = (TextView) findViewById(R.id.editText2);
     }
 }
