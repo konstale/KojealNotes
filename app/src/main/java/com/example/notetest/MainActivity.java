@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     //makes the plus button open create deck activity
     public void addClick(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Create_Deck_Name");
+        builder.setTitle("Create Deck Name");
 builder.show();
 
 
