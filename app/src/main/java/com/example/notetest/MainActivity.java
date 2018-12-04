@@ -60,4 +60,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //clicking cancel on dialog brings it back to MainActivity
+    public void addClick3(View view) {
+        Intent MainActivity = new Intent(MainActivity.this, MainActivity.class);
+        startActivity(MainActivity);
+    }
+
 }

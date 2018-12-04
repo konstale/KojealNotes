@@ -26,6 +26,7 @@
         android:id="@+id/cancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="addClick3"
         android:text="@string/cancel_button" />
 
 </LinearLayout>
