@@ -50,11 +50,9 @@ public class MainActivity extends AppCompatActivity {
         builder.setView(setView);
         builder.show();
 
-    }
-    //clicking save on dialog brings it to CreateDeckActivity
-        public void addClick2(View view) {
-            Intent createActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
-            startActivity(createActivity);
+
+
+
 
 
 
