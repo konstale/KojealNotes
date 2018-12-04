@@ -46,8 +46,10 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = getLayoutInflater();
         builder.setTitle("Create Deck Name");
-        builder.show();
         final View setView = view.inflate(this, R.layout.popup, null);
+        builder.setView(setView);
+        builder.show();
+
 
 
 
