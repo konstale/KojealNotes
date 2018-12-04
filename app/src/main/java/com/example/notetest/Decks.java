@@ -5,21 +5,22 @@ import java.util.ArrayList;
 public class Decks {
     private static final Decks ourInstance = new Decks();
 
-    private ArrayList<Decks> decks;
+    private ArrayList<Deck> decks;
 
     public static Decks getInstance() {
         return ourInstance;
     }
 
     public Decks() {
-        decks = new ArrayList<Decks>();
+        decks = new ArrayList<Deck>();
         //decks.add(new Decks());
+        decks.add (new Deck( "jotain"));
     }
 
-    public ArrayList<Decks> getDecks() {
+    public ArrayList<Deck> getDecks() {
         return decks;
     }
-    public Decks getDecks(int i) {
+    public Deck getDecks(int i) {
         return decks.get(i);
     }
 }
