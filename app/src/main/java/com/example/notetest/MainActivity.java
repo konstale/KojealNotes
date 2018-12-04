@@ -49,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
         final View setView = view.inflate(this, R.layout.popup, null);
         builder.setView(setView);
         builder.show();
+    }
+        //clicking save on dialog brings it to CreateDeckActivity
+        public void addClick2(View view){
+            Intent createActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
+            startActivity(createActivity);
+        }
+        public void addClick3(View view) {
+            Intent MainActivity = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(MainActivity);
 
     }
 
