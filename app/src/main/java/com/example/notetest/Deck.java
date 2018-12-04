@@ -13,14 +13,13 @@ public class Deck {
         this.name = name;
     }
 
+    public Deck() {
+        this.name = getDeckName();
+    }
+
     public String getDeckName(){
         return name;
 
-    }
-
-    @Override
-    public String toString(){
-        return this.name;
     }
 
 }
