@@ -50,11 +50,6 @@ public class MainActivity extends AppCompatActivity {
         builder.setView(setView);
         builder.show();
 
-
-
-
-
-
     }
 
 }
