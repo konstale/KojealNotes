@@ -2,6 +2,7 @@ package com.example.notetest;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -41,8 +42,13 @@ public class MainActivity extends AppCompatActivity {
     }
     //makes the plus button open create deck activity
     public void addClick(View view) {
-        Intent createActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
-        startActivity(createActivity);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Create_Deck_Name");
+builder.show();
+
+
+
+
     }
 
 }
