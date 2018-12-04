@@ -14,7 +14,8 @@ public class Decks {
     public Decks() {
         decks = new ArrayList<Deck>();
         //decks.add(new Decks());
-        decks.add (new Deck( "jotain"));
+        decks.add (new Deck( "Months"));
+        decks.add (new Deck("Weekdays"));
     }
 
     public ArrayList<Deck> getDecks() {
