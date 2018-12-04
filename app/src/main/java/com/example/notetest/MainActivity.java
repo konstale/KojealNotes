@@ -10,8 +10,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import java.util.ArrayList;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -53,23 +51,15 @@ public class MainActivity extends AppCompatActivity {
         builder.show();
 
     }
-        //clicking save on dialog brings it to CreateDeckActivity
-        public void onSave(View view){
-            Intent createActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
-            startActivity(createActivity);
-            addDeck(String.valueOf(view.findViewById(R.id.Enter)));
-        }
-        public void onCancel(View view) {
-            Intent MainActivity = new Intent(MainActivity.this, MainActivity.class);
-            startActivity(MainActivity);
-
+    //clicking save on dialog brings it to CreateDeckActivity
+    public void onSave(View view){
+        Intent createActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
+        startActivity(createActivity);
     }
-    public void addDeck(String deckName){
-        Decks decks = new Decks();
-        Deck deck = new Deck(deckName);
-        ArrayList<Deck> receivedDecks = new ArrayList<Deck>();
-        receivedDecks.add(deck);
-        decks.setDeckList(receivedDecks);
+    public void onCancel(View view) {
+        Intent MainActivity = new Intent(MainActivity.this, MainActivity.class);
+        startActivity(MainActivity);
+
     }
 
 }
