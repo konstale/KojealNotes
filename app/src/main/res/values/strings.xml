@@ -5,4 +5,7 @@
     <string name="back_Deck">Back</string>
     <string name="front_text_enter">Enter Front Text</string>
     <string name="back_text_enter">Enter Back Text</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="save_button">Save</string>
+    <string name="enter_text">Enter Text</string>
 </resources>
