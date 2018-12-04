@@ -5,13 +5,12 @@ import java.util.ArrayList;
 public class Deck {
 
     private String name;
-    private String type;
 
 
-    public Deck(String name, String type){
+
+    public Deck(String name){
 
         this.name = name;
-        this.type = type;
     }
 
     public String getDeckName(){
@@ -19,9 +18,6 @@ public class Deck {
 
     }
 
-    public String getDeckType(){
-        return type;
-    }
     @Override
     public String toString(){
         return this.name;
