@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -43,8 +44,12 @@ public class MainActivity extends AppCompatActivity {
     //makes the plus button open create deck activity
     public void addClick(View view) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        LayoutInflater inflater = getLayoutInflater();
         builder.setTitle("Create Deck Name");
-builder.show();
+        builder.show();
+        final View setView = view.inflate(this, R.layout.popup, null);
+
+
 
 
 
