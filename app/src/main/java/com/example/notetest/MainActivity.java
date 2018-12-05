@@ -29,7 +29,17 @@ public class MainActivity extends AppCompatActivity {
         ListView lv = findViewById(R.id.deckView);
 
         lv.setAdapter(new ArrayAdapter<Deck>(this, android.R.layout.simple_list_item_1, Decks.getInstance().getDecks()));
-
+        lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            //makes holding long click to open create deck activity
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+        Log.d(TAG, "onItemClick(" + i + ")");
+        Intent nextActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
+        nextActivity.putExtra("EXTRA", i);
+        startActivity(nextActivity);
+        return true;}
+    });
+        //makes short click to open view deck activity
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
