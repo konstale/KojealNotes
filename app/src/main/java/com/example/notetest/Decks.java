@@ -27,6 +27,9 @@ public class Decks {
 
     private void setDeckList(ArrayList<Deck> receivedDecks) {
     }
+    public void addDeck(String deckName){
+      decks.add (new Deck (deckName));
+    }
 
 
     public ArrayList<Deck> getDecks() {
