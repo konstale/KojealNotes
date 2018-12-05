@@ -17,6 +17,9 @@ public class Decks {
         decks.add (new Deck( "Months"));
         decks.add (new Deck("Weekdays"));
     }
+    public void addDeck(String deckName){
+      decks.add (new Deck (deckName));
+    }
 
     public ArrayList<Deck> getDecks() {
         return decks;

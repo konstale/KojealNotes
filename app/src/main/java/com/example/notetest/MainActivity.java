@@ -1,5 +1,6 @@
 package com.example.notetest;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
@@ -9,7 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,24 +46,27 @@ public class MainActivity extends AppCompatActivity {
     }
     //makes the plus button open create deck activity
     public void addClick(View view) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = getLayoutInflater();
         builder.setTitle("Create Deck Name");
         final View setView = view.inflate(this, R.layout.popup, null);
+        final EditText input = (EditText) setView.findViewById(R.id.Enter);
         builder.setView(setView);
+        //makes save button to add enter message to list.
+        builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Decks.getInstance().addDeck(input.getText().toString());
+                            }
+        });
+        //makes cancel button cancel the message and returns to list.
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+                            }
+        });
         builder.show();
-
-    }
-    //clicking save on dialog brings it to CreateDeckActivity
-    public void onSave(View view){
-        Intent createActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
-        startActivity(createActivity);
-    }
-    //clicking cancel on dialog brings it back to MainActivity
-    public void onCancel(View view) {
-        Intent MainActivity = new Intent(MainActivity.this, MainActivity.class);
-        startActivity(MainActivity);
-
-    }
+        }
 
 }
