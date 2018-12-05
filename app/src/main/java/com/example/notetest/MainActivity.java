@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         Intent createActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
         startActivity(createActivity);
     }
+    //clicking cancel on dialog brings it back to MainActivity
     public void onCancel(View view) {
         Intent MainActivity = new Intent(MainActivity.this, MainActivity.class);
         startActivity(MainActivity);
