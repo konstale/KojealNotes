@@ -22,6 +22,10 @@ public class Deck {
 
     }
 
+    public void setDeckName(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString(){
         return this.name;
