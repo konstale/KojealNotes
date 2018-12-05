@@ -11,22 +11,13 @@ public class Decks {
         return ourInstance;
     }
 
-    //public Decks() {
-        //decks = new ArrayList<Deck>();
+    public Decks() {
+        decks = new ArrayList<Deck>();
         //decks.add(new Decks());
-        //decks.add (new Deck( "Months"));
-        //decks.add (new Deck("Weekdays"));}
+        decks.add (new Deck( "Months"));
+        decks.add (new Deck("Weekdays"));}
 
-    public void addDeck(String deckName){
-        Decks decks = new Decks();
-        Deck deck = new Deck(deckName);
-        ArrayList<Deck> receivedDecks = new ArrayList<Deck>();
-        receivedDecks.add(deck);
-        decks.setDeckList(receivedDecks);
-    }
 
-    private void setDeckList(ArrayList<Deck> receivedDecks) {
-    }
     public void addDeck(String deckName){
       decks.add (new Deck (deckName));
     }
