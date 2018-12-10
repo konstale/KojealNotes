@@ -30,10 +30,17 @@ public class MainActivity extends AppCompatActivity {
 
         lv.setAdapter(new ArrayAdapter<Deck>(this, android.R.layout.simple_list_item_1, Decks.getInstance().getDecks()));
 
-        //makes long click on a deck name open create deck activity
 
+
+
+
+
+
+
+
+
+        //makes long click on a deck name open create deck activity
         lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            //makes holding long click to open create deck activity
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
         Log.d(TAG, "onItemClick(" + i + ")");
@@ -42,6 +49,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(nextActivity);
         return true;}
     });
+
+
+
+
+
+
+
+
         //makes short click to open view deck activity
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -57,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    //makes the plus button open create deck activity
+    //makes the plus button open create deck name
     public void addClick(View view) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = getLayoutInflater();
