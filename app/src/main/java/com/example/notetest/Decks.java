@@ -14,13 +14,12 @@ public class Decks {
     public Decks() {
         decks = new ArrayList<Deck>();
         //decks.add(new Decks());
-        decks.add (new Deck( "Months"));
-        decks.add (new Deck("Weekdays"));}
+        decks.add (new Deck( ));
+        }
 
 
-    public void addDeck(String deckName){
-      decks.add (new Deck (deckName));
-    }
+    public void addDeck(Deck d){
+      this.decks.add(d);    }
 
 
     public ArrayList<Deck> getDecks() {

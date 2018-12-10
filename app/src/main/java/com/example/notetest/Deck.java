@@ -1,34 +1,33 @@
 package com.example.notetest;
 
+import android.widget.EditText;
+
 import java.util.ArrayList;
 
 public class Deck {
 
     private String name;
+    private ArrayList<Flashcard> flashcards;
 
+    public Deck(){
+        this.name = name;
+        this.flashcards = new ArrayList<Flashcard>();
+    }
 
-
-    public Deck(String name){
-
+    public void setName(String name){
         this.name = name;
     }
 
-    public Deck() {
-        this.name = getDeckName();
-    }
-
-    public String getDeckName(){
+    public String getName() {
         return name;
-
     }
 
-    public void setDeckName(String name) {
-        this.name = name;
-    }
-
-    @Override
     public String toString(){
         return this.name;
     }
+
+
+
+
 
 }

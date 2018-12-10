@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "DBG";
     public static final String PLACEHOLDER = "com.example.notetest";
+    Deck newDeck;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         lv.setAdapter(new ArrayAdapter<Deck>(this, android.R.layout.simple_list_item_1, Decks.getInstance().getDecks()));
 
-
+        newDeck = new Deck();
 
 
 
@@ -86,7 +87,8 @@ public class MainActivity extends AppCompatActivity {
         builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Decks.getInstance().addDeck(input.getText().toString());
+                Decks.getInstance().addDeck(newDeck);
+                newDeck.setName(input.getText().toString());
                             }
         });
         //makes cancel button cancel the message and returns to list.
