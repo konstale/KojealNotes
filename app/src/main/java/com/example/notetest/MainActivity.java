@@ -25,10 +25,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
+        //puts decks in a list view
         ListView lv = findViewById(R.id.deckView);
 
         lv.setAdapter(new ArrayAdapter<Deck>(this, android.R.layout.simple_list_item_1, Decks.getInstance().getDecks()));
+
+        //makes long click on a deck name open create deck activity
+
         lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             //makes holding long click to open create deck activity
             @Override
@@ -62,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         final View setView = view.inflate(this, R.layout.popup, null);
         final EditText input = (EditText) setView.findViewById(R.id.Enter);
         builder.setView(setView);
+
+
         //makes save button to add enter message to list.
         builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
             @Override
