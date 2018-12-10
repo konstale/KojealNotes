@@ -89,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 Decks.getInstance().addDeck(newDeck);
                 newDeck.setName(input.getText().toString());
+                newDeck = new Deck();
                             }
         });
         //makes cancel button cancel the message and returns to list.
