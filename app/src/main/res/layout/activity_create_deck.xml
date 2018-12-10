@@ -7,7 +7,7 @@
     tools:context=".CreateDeckActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/frontEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/backEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -29,10 +29,10 @@
         android:hint="@string/back_text_enter"
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/frontEdit" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -42,7 +42,7 @@
         app:srcCompat="@android:drawable/arrow_down_float" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/forwardButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -58,7 +58,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginBottom="10dp"
         android:text="@string/front_deck"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/frontEdit"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -68,7 +68,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginBottom="10dp"
         android:text="@string/back_Deck"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/backEdit"
         app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
