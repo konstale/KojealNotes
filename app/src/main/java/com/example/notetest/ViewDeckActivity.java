@@ -11,7 +11,7 @@ public class ViewDeckActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_deck);
 
-       // TextView frontText = (TextView) findViewById(R.id.editText);
-        // TextView backText = (TextView) findViewById(R.id.editText2);
+        TextView ct = findViewById(R.id.cardText);
+
     }
 }
