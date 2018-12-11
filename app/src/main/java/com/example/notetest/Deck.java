@@ -13,6 +13,9 @@ public class Deck {
         this.name = name;
         this.flashcards = new ArrayList<Flashcard>();
     }
+    public void addFlashcard(String note){
+        flashcards.add(new Flashcard(note));
+    }
 
     public void addFlashcard(String note){
         flashcards.add(new Flashcard(note));
@@ -28,6 +31,10 @@ public class Deck {
 
     public String toString(){
         return this.name;
+    }
+
+    public String getNotes(){
+        return flashcards.get(0).getNote();
     }
 
 
