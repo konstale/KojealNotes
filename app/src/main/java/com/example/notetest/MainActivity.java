@@ -20,13 +20,17 @@ public class MainActivity extends AppCompatActivity {
     public static final String PLACEHOLDER = "com.example.notetest";
     Deck newDeck;
 
+    /**
+     * puts decks in a list view
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
-        //puts decks in a list view
+
+
         ListView lv = findViewById(R.id.deckView);
         lv.setAdapter(new ArrayAdapter<Deck>(this, android.R.layout.simple_list_item_1, Decks.getInstance().getDecks()));
 
@@ -39,7 +43,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //makes long click on a deck name open create deck activity
+        /**
+         * makes long click on a deck name open create deck activity
+         */
         lv.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -53,11 +59,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-        //makes short click to open view deck activity
+        /**
+         * makes short click to open view deck activity
+         */
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -72,7 +76,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    //makes the plus button open create deck name
+
+    /**
+     * makes the plus button open create deck name
+     * @param view
+     */
     public void addClick(View view) {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = getLayoutInflater();
@@ -81,8 +89,10 @@ public class MainActivity extends AppCompatActivity {
         final EditText input = (EditText) setView.findViewById(R.id.Enter);
         builder.setView(setView);
 
+/**
+ * makes save button to add enter message to list.
+ */
 
-        //makes save button to add enter message to list.
         builder.setPositiveButton("Save", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -92,7 +102,9 @@ public class MainActivity extends AppCompatActivity {
 
                             }
         });
-        //makes cancel button cancel the message and returns to list.
+        /**
+         * makes cancel button cancel the message and returns to list.
+         */
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
