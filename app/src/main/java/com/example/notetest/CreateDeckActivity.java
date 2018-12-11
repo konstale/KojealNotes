@@ -21,6 +21,10 @@ public class CreateDeckActivity extends AppCompatActivity {
 
     int i;
 
+    /**
+     * Adds Flashcard text to Decks Array.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -33,6 +37,10 @@ public class CreateDeckActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Saves entered text.
+     * @param view
+     */
     public void onSaveButtonClick(View view){
         String getInput = txt.getText().toString();
         Decks.getInstance().getDecks(i).addFlashcard(getInput);
