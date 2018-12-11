@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
         //puts decks in a list view
         ListView lv = findViewById(R.id.deckView);
-//sets create activity to array
-        ArrayAdapter adapter = new ArrayAdapter<String>(this,R.layout.activity_create_deck);
         lv.setAdapter(new ArrayAdapter<Deck>(this, android.R.layout.simple_list_item_1, Decks.getInstance().getDecks()));
 
         newDeck = new Deck();
