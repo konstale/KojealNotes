@@ -4,6 +4,9 @@ import android.widget.EditText;
 
 import java.util.ArrayList;
 
+/**
+ * The array list where flashcard array is created and where all deck names are saved.
+ */
 public class Deck {
 
     private String name;

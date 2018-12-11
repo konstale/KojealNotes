@@ -2,6 +2,9 @@ package com.example.notetest;
 
 import java.util.ArrayList;
 
+/**
+ * Handles the decks array list
+ */
 public class Decks {
 
     private static final Decks ourInstance = new Decks();
