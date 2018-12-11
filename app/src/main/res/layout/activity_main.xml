@@ -27,7 +27,8 @@
         android:background="@android:drawable/ic_menu_add"
         android:onClick="addClick"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="16dp" />
 
     <ListView
         android:id="@+id/deckView"
@@ -49,6 +50,7 @@
         android:textColor="@android:color/white"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp" />
 
 </android.support.constraint.ConstraintLayout>
