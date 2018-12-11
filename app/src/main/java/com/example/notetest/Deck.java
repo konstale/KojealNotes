@@ -14,6 +14,10 @@ public class Deck {
         this.flashcards = new ArrayList<Flashcard>();
     }
 
+    public void addFlashcard(String note){
+        flashcards.add(new Flashcard(note));
+    }
+
     public void setName(String name){
         this.name = name;
     }
