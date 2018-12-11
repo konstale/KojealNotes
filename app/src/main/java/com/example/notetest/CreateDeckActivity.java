@@ -28,20 +28,8 @@ public class CreateDeckActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_deck);
         Bundle extras = getIntent().getExtras();
         i= extras.getInt("EXTRA");
+        txt = (EditText) findViewById(R.id.changeText);
 
-            txt = (EditText) findViewById(R.id.changeText);
-            //saveButton.setOnClickListener(new View.OnClickListener() {
-            //    @Override
-            //    public void onClick(View v) {
-            //        String getInput = txt.getText().toString();
-            //        Decks.getInstance().getDecks(i).addFlashcard(getInput);
-            //        Log.d("dbg" ,Decks.getInstance().getDecks(i).getNotes());
-
-
-
-            //    }
-
-            //});
 
     }
 
@@ -49,6 +37,7 @@ public class CreateDeckActivity extends AppCompatActivity {
         String getInput = txt.getText().toString();
         Decks.getInstance().getDecks(i).addFlashcard(getInput);
         Log.d("dbg" ,Decks.getInstance().getDecks(i).getNotes());
+        txt.setText("");
 
     }
 
