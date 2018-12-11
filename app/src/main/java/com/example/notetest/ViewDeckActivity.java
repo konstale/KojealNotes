@@ -22,17 +22,11 @@ private TextView ct;
 
     }
     public void onRightButtonClick(View view){
-        String getInput = ct.getText().toString();
-        Decks.getInstance().getDecks(i).addFlashcard(getInput);
-        Log.d("dbg" ,Decks.getInstance().getDecks(i).getNotes());
-        ct.setText("");
+        ct.setText(Decks.getInstance().getDecks(i).nextCard());
 
     }
     public void onLeftButtonClick(View view){
-        String getInput = ct.getText().toString();
-        Decks.getInstance().getDecks(i).addFlashcard(getInput);
-        Log.d("dbg" ,Decks.getInstance().getDecks(i).getNotes());
-        ct.setText("");
+        ct.setText(Decks.getInstance().getDecks(i).lastCard());
 
     }
 
