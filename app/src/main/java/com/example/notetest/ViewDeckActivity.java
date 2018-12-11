@@ -21,10 +21,20 @@ private TextView ct;
 
 
     }
+
+    /**
+     * Calls next note within Deck.
+     * @param view
+     */
     public void onRightButtonClick(View view){
         ct.setText(Decks.getInstance().getDecks(i).nextCard());
 
     }
+
+    /**
+     *  Calls previous note within Deck.
+     * @param view
+     */
     public void onLeftButtonClick(View view){
         ct.setText(Decks.getInstance().getDecks(i).lastCard());
 
