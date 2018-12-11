@@ -31,6 +31,7 @@ public class Deck {
 
     public String getNotes(){
         return flashcards.get(0).getNote();
+
     }
 
 
