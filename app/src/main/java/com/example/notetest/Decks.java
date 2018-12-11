@@ -13,8 +13,6 @@ public class Decks {
 
     public Decks() {
         decks = new ArrayList<Deck>();
-        //decks.add(new Decks());
-        //decks.add (new Deck());
         }
 
 
