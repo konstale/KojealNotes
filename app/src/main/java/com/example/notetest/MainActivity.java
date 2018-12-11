@@ -90,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
                 Decks.getInstance().addDeck(newDeck);
                 newDeck.setName(input.getText().toString());
                 newDeck = new Deck();
+                Intent nextActivity = new Intent(MainActivity.this, CreateDeckActivity.class);
+                nextActivity.putExtra("EXTRA",which);
+                startActivity(nextActivity);
                             }
         });
         //makes cancel button cancel the message and returns to list.
