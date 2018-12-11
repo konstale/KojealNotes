@@ -1,11 +1,16 @@
 package com.example.notetest;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+
+/**
+ * Handles the viewing of flashcards added to decks
+ */
 public class ViewDeckActivity extends AppCompatActivity {
 
     private int i;

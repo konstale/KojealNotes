@@ -13,6 +13,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+/**
+ * Is the activity where you can enter information for a Deck name
+ */
 public class CreateDeckActivity extends AppCompatActivity {
 
     Button saveButton;

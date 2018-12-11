@@ -14,6 +14,9 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+/**
+ * Has the deckView Listview "menu" for the app. Will show added decks here.
+ */
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "DBG";

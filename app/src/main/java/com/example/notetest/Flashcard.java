@@ -1,5 +1,8 @@
 package com.example.notetest;
 
+/**
+ * Handles the cards added to decks
+ */
 public class Flashcard{
 
     private String note;
