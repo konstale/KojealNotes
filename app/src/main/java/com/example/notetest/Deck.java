@@ -37,7 +37,7 @@ public class Deck {
 
     }
     public String nextCard(){
-        if (i<flashcards.size()){
+        if (i<flashcards.size()-1){
             i++;
         }
         return flashcards.get(i).getNote();
