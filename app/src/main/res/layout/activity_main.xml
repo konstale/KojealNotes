@@ -27,7 +27,8 @@
         android:background="@android:drawable/ic_menu_add"
         android:onClick="addClick"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="16dp" />
 
     <ListView
         android:id="@+id/deckView"
@@ -43,11 +44,12 @@
         android:id="@+id/textView"
         android:layout_width="173dp"
         android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="15dp"
         android:text="@string/kojeal_notes"
         android:textColor="@android:color/white"
-        android:textSize="28sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
