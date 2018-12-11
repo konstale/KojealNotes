@@ -8,25 +8,27 @@
 
     <ImageButton
         android:id="@+id/rightButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:onClick="onRightButtonClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/arrow_down_float" />
+        app:srcCompat="@android:drawable/arrow_down_float"
+        android:layout_marginRight="16dp" />
 
     <ImageButton
         android:id="@+id/leftButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:onClick="onLeftButtonClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/arrow_down_float" />
+        app:srcCompat="@android:drawable/arrow_down_float"
+        android:layout_marginLeft="16dp" />
 
     <TextView
         android:id="@+id/cardText"
