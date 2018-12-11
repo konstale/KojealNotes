@@ -2,21 +2,17 @@ package com.example.notetest;
 
 public class Flashcard{
 
-    private String front;
-    private String back;
+    private String note;
 
-    public Flashcard(String front, String back){
-        this.front = front;
-        this.back = back;
+    public Flashcard(String note){
+        this.note = note;
+
     }
 
-    public String getFront(){
-        return front;
+    public String getNote(){
+        return note;
     }
 
-    public String getBack(){
-        return back;
-    }
 
 
 
